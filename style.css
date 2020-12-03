@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.layer {
+    display: none;
+}
+
+
+
+.navtop {
+    z-index: 1;
+    position: absolute;
+    display: inline;
+    width: 100%;
+    height: 6%;
+    background-color: white;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.navtop h1 {
+    float: left;
+    position: relative;
+    bottom: 12px;
+    left: 15px;
+    font-family: Roboto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 5px;
+}
+
+.navtop a {
+    position: relative;
+    width: auto;
+    top: 10px;
+    margin-right: 25px;
+    bottom: 10px;
+    text-decoration: none;
+}
+
+.navtop a:hover {
+    text-decoration: underline;
+}
+
+.navtop a:visited {
+    color: black;
+}
+
+body {
+    margin: 0;
+}
+
+body>nav>div>a:nth-child(3) {
+    color: black !important;
+}
+
+.info {
+    float: right;
+}
+
+.container {
+    display: inline-flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.procrastinacao {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 20%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid rgb(196, 196, 196);
+}
+
+.todo {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: left;
+    width: 80%;
+    height: 100%;
+}
+
+svg:nth-child(2) {
+    position: absolute;
+    right: 0;
+    margin-right: 5px;
+    top: 72%;
+    width: auto;
+    height: 50px;
+    fill: rgb(0, 0, 0);
+    opacity: 0.7;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+svg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.submit-popup-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+}
+
+.submit-popup-top svg {
+    position: absolute;
+    right: 0;
+    width: auto;
+    height: 50px;
+    transform: scale(0.5);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.submit-popup-top svg:hover {
+    opacity: 1;
+}
+
+.todo-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 30%;
+}
+
+.submit-popup input {
+    position: relative;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.submit-popup {
+    position: relative;
+    display: none;
+    overflow: hidden;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding-bottom: 5%;
+    background-color: white;
+    border-top: 5px solid brown;
+    -webkit-box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.29);
+    box-shadow: 10px 10px 7px -1px rgba(0, 0, 0, 0.29);
+}
+
+.button1 {
+    background: none;
+    background-color: rgb(196, 196, 196);
+    border: none;
+    border-left: 2px solid brown !important;
+    font-family: Roboto;
+}
+
+.lista {
+    margin: 0;
+    z-index: 3;
+    position: absolute;
+    top: 6% !important;
+    height: auto;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+.lista h2 {
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: black;
+    background-color: white;
+}
+
+.lista form {
+    border-right: 1px solid rgb(196, 196, 196);
+    border-bottom: 1px solid rgb(196, 196, 196);
+    background-color: white;
+    padding: 3%;
+}
+
+.lista input {
+    padding-left: 10%;
+}
+
+table {
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+tr {
+    position: relative;
+    top: 5px;
+    background-color: white;
+}
+
+tr:hover {
+    background-color: rgb(219, 219, 219);
+}
+
+.todo span {
+    color: red;
+    font-weight: bold;
+}
+
+.topo {
+    position: relative;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 23%;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.user {
+    position: relative;
+    display: inline-block;
+    width: 80%;
+    height: 155%;
+
+    bottom: 21%;
+    transform: scale(0.3);
+}
+
+.titulo {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+    height: 15%;
+}
+
+.lista-proc {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 77%;
+    background-color: white;
+    overflow: auto;
+
+}
+
+.procrastinacao span:nth-child(2) {
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+}
+
+.procrastinacao span:nth-child(2):hover {
+    text-decoration: underline;
+}
+
+.lista-proc h2 {
+    font-size: 15px !important;
+    font-familY: Roboto;
+}
+
+.lista-proc ol {
+    word-break: break-all;
+    position: relative;
+    right: 20px;
+}
+
+.lista-proc ol li {
+    margin-top: 10px;
+}
+
+.lista-proc ol li:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.lista-proc ol li:active {
+    transform: scale(0.99);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.user svg {
+    position: relative;
+    bottom: 35%;
+    right: 20%;
+    transform: scale(0.3);
+}
+
+svg {
+    background-color: rgba(255, 255, 255, 0.671);
+}
+
+.topo {
+    word-break: break-all;
+}
+
+.form2 {
+    position: relative;
+    left: 2%;
+}
+
+ol {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(143, 143, 143) !important;
+}
+
+a:visited {
+    color: rgb(143, 143, 143);
+}
+
+a:hover {
+    text-decoration: underline;
+}
